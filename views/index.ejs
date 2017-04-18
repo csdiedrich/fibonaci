@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= title %></title>
+<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h1><%= title %></h1>
+<% if (typeof fiboval !== "undefined") { %>
+<p>Fibonacci for <%= fibonum %> is <%= fiboval %></p>
+<hr/>
+<% } %>
+<p>Enter a number to see its' Fibonacci number</p>
+<form name='fibonacci' action='/' method='get'>
+<input type='text' name='fibonum' />
+<input type='submit' value='Submit' />
+</form>
+</body>
+</html>
